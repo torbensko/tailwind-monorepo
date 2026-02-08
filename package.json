@@ -1,0 +1,13 @@
+{
+  "name": "tailwind-monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter webapp dev",
+    "build": "pnpm --filter webapp build"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
